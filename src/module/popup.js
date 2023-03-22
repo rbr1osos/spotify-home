@@ -131,7 +131,6 @@ password_input.setAttribute('name','password')
 password_input.setAttribute('placeholder','enter password') //must contain at least 8 char, 1 num, and include lower and upper case, and special char
 password_input.addEventListener('input', (e)=>{
     if (password_input.validity.valid){
-        console.log('nice')
         password_input.style.border=''
         password_input.style.backgroundColor=''
     }
@@ -186,7 +185,6 @@ popup.appendChild(popup_button)
 function showError(input){
     if (input === 'username'){
         if (username_input.validity.tooShort){
-            console.log('Too Short need at least 8 characters')
             username_container.classList.add('active')
         }
 
@@ -198,11 +196,6 @@ function showError(input){
             email_input.style.backgroundColor='#FDD'
             email_container.classList.add('active')
         }
-        else if (email_input.validity.tooShort){
-            console.log('Too Short')
-            email_input.style.border='3px solid red'
-            email_input.style.backgroundColor='#FDD'
-        }
     }
     else if (input === 'zip'){
         zip_input.style.border='3px solid red'
@@ -211,7 +204,6 @@ function showError(input){
 
     }
     else if (input === 'password'){
-        console.log('need /must contain at least 8 char, 1 num, and include lower and upper case, and special char')
         password_input.style.border='3px solid red'
         password_input.style.backgroundColor='#FDD'
     }

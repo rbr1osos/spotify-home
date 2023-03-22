@@ -230,10 +230,38 @@ p{
     height:40px;
     width: 320px;
 }
-
+#username-container.active::before{
+    position:absolute;
+    color:rgb(253, 99, 99);
+    font-weight:normal;
+    top:37%;
+    content:'Enter at least 8 characters'
+}
+#email-container.active::before{
+    position:absolute;
+    color:rgb(253, 99, 99);
+    font-weight:normal;
+    top:37%;
+    content:'* Enter valid email. Ex: name@email.com'
+}
+#zip-container.active::before{
+    position:absolute;
+    color:rgb(253, 99, 99);
+    font-weight:normal;
+    top:55%;
+    content:'Enter ONLY numbers'
+}
+#confirm-container.active::before{
+    position:absolute;
+    color:rgb(253, 99, 99);
+    font-weight:normal;
+    top:72%;
+    content:'Passwords do not match'
+}
 #username{
     grid-area:1/1/2/2;
 }
+
 #email{
     grid-area:1/2/2/3;
 }

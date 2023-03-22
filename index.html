@@ -3,7 +3,91 @@
   <head>
     <meta charset="utf-8">
     <title>Development</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"><script defer src="main.js"></script></head>
+    <link rel='stylesheet' href='../src/style.css'>
+
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"><script defer src="main.js"></script> -->
+</head>
   <body>
+      <div class='container'>
+          <div class='header'>
+              <a class='log-in'>Log in</a>
+              <button class='sign-up'>Sign Up</button>
+          </div>
+          <div class='sidebar'>
+              <div class='logo-container'>
+                  <img src='images/spotify-icon.png'>
+                  <h1 class='spotify-text'>Spotify</h1>
+              </div>
+              <ul class='sidebar-links'>
+                  <li class='sidebar-link'><img class ='icon' src='images/home-icon.svg'>Home</li>
+                  <li class='sidebar-link'><img class ='icon' src='images/search-icon.svg'>Search</li>
+                  <li class='sidebar-link'><img class ='icon' src='images/library-icon.svg'>Your Library</li>
+                  <li class='sidebar-link'><img class ='icon' src='images/add-icon.svg'>Create Playlist</li>
+                  <li class='sidebar-link'><img class ='icon' src='images/like-icon.svg'>Likes</li>
+              </ul>
+          </div>
+          <div class='content'>
+                <div class='title-container'>
+                    <h1 class='title'>Focus</h1>
+                    <p class='show-all'>Show all</p>
+                </div>
+                <div class='content-cards'>
+                    <div class='card'>
+                        <img src='../dist/images/focus-image.svg'class='card-image'>
+                        <h3 class='card-title'>Peaceful Piano</h3>
+                        <p class='card-desc'>Relax and indulge with beautiful piano pieces</p>
+                    </div>
+                    <div class='card'>
+                        <img src='../dist/images/focus-image.svg'class='card-image'>
+                        <h3 class='card-title'>Peaceful Piano</h3>
+                        <p class='card-desc'>Relax and indulge with beautiful piano pieces</p>
+                    </div>
+                    <div class='card'>
+                        <img src='../dist/images/focus-image.svg'class='card-image'>
+                        <h3 class='card-title'>Peaceful Piano</h3>
+                        <p class='card-desc'>Relax and indulge with beautiful piano pieces</p>
+                    </div>
+                    <div class='card'>
+                        <img src='../dist/images/focus-image.svg'class='card-image'>
+                        <h3 class='card-title'>Peaceful Piano</h3>
+                        <p class='card-desc'>Relax and indulge with beautiful piano pieces</p>
+                    </div>
+                </div>
+                <div class='title-container'>
+                    <h1 class='title'>Top Hits</h1>
+                </div>
+                <div class='content-cards'>
+                    <div class='card'>
+                        <img src='../dist/images/focus-image.svg'class='card-image'>
+                        <h3 class='card-title'>Peaceful Piano</h3>
+                        <p class='card-desc'>Relax and indulge with beautiful piano pieces</p>
+                    </div>
+                    <div class='card'>
+                        <img src='../dist/images/focus-image.svg'class='card-image'>
+                        <h3 class='card-title'>Peaceful Piano</h3>
+                        <p class='card-desc'>Relax and indulge with beautiful piano pieces</p>
+                    </div>
+                    <div class='card'>
+                        <img src='../dist/images/focus-image.svg'class='card-image'>
+                        <h3 class='card-title'>Peaceful Piano</h3>
+                        <p class='card-desc'>Relax and indulge with beautiful piano pieces</p>
+                    </div>
+                    <div class='card'>
+                        <img src='../dist/images/focus-image.svg'class='card-image'>
+                        <h3 class='card-title'>Peaceful Piano</h3>
+                        <p class='card-desc'>Relax and indulge with beautiful piano pieces</p>
+                    </div>
+                </div>
+          </div>
+      </div>
+      <div class='overlay'></div>
+      <div class='popup'>
+          <h1 class='popup-title'>Create an Account</h1>
+          <form>
+              <input type='name'>
+          </form>
+      </div>
+
+      <script type='module' src='../dist/main.js'></script>
   </body>
 </html>

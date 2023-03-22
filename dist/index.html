@@ -5,9 +5,10 @@
     <title>Development</title>
     <link rel='stylesheet' href='../src/style.css'>
 
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"><script defer src="main.js"></script> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"><script defer src="main.js"></script>
 </head>
   <body>
+<div class='main-container'>
       <div class='container'>
           <div class='header'>
               <a class='log-in'>Log in</a>
@@ -15,15 +16,20 @@
           </div>
           <div class='sidebar'>
               <div class='logo-container'>
-                  <img src='images/spotify-icon.png'>
+                  <img class='spotify-logo' src='images/spotify-icon.png'>
                   <h1 class='spotify-text'>Spotify</h1>
               </div>
               <ul class='sidebar-links'>
-                  <li class='sidebar-link'><img class ='icon' src='images/home-icon.svg'>Home</li>
-                  <li class='sidebar-link'><img class ='icon' src='images/search-icon.svg'>Search</li>
-                  <li class='sidebar-link'><img class ='icon' src='images/library-icon.svg'>Your Library</li>
-                  <li class='sidebar-link'><img class ='icon' src='images/add-icon.svg'>Create Playlist</li>
-                  <li class='sidebar-link'><img class ='icon' src='images/like-icon.svg'>Likes</li>
+                  <div class='section1'>
+                    <li class='sidebar-link'><img class ='icon' src='images/home-icon.svg'>Home</li>
+                    <li class='sidebar-link'><img class ='icon' src='images/search-icon.svg'>Search</li>
+                    <li class='sidebar-link'><img class ='icon' src='images/library-icon.svg'>Your Library</li>
+                 </div>
+                 <div class='section2'>
+                    <li class='sidebar-link'><img class ='icon' src='images/add-icon.svg'>Create Playlist</li>
+                    <li class='sidebar-link'><img class ='icon' src='images/like-icon.svg'>Likes</li>
+                </div>
+
               </ul>
           </div>
           <div class='content'>
@@ -52,6 +58,22 @@
                         <h3 class='card-title'>Peaceful Piano</h3>
                         <p class='card-desc'>Relax and indulge with beautiful piano pieces</p>
                     </div>
+                    <div class='card'>
+                        <img src='../dist/images/focus-image.svg'class='card-image'>
+                        <h3 class='card-title'>Peaceful Piano</h3>
+                        <p class='card-desc'>Relax and indulge with beautiful piano pieces</p>
+                    </div>
+                    <div class='card'>
+                        <img src='../dist/images/focus-image.svg'class='card-image'>
+                        <h3 class='card-title'>Peaceful Piano</h3>
+                        <p class='card-desc'>Relax and indulge with beautiful piano pieces</p>
+                    </div>
+                    <div class='card'>
+                        <img src='../dist/images/focus-image.svg'class='card-image'>
+                        <h3 class='card-title'>Peaceful Piano</h3>
+                        <p class='card-desc'>Relax and indulge with beautiful piano pieces</p>
+                    </div>
+                    
                 </div>
                 <div class='title-container'>
                     <h1 class='title'>Top Hits</h1>
@@ -76,18 +98,19 @@
                         <img src='../dist/images/focus-image.svg'class='card-image'>
                         <h3 class='card-title'>Peaceful Piano</h3>
                         <p class='card-desc'>Relax and indulge with beautiful piano pieces</p>
-                    </div>
+                    </div>                    
                 </div>
           </div>
       </div>
       <div class='overlay'></div>
-      <div class='popup'>
-          <h1 class='popup-title'>Create an Account</h1>
-          <form>
-              <input type='name'>
-          </form>
+      <div class='footer'>
+          <div class='left-side'>
+              <h4 class='preview'>PREVIEW OF SPOTIFY</h4>
+              <p class='preview-text'>Sign up to get unlimited songs and podcasts with occassional ads. No credit card needed.</p>
+          </div>
+          <button id='sign-up-bottom' class='sign-up'>Sign Up free</button>
       </div>
-
-      <script type='module' src='../dist/main.js'></script>
+    </div>
+      <script src='../src/module/popup.js'></script>
   </body>
 </html>
